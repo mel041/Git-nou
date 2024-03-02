@@ -17,11 +17,17 @@ def ver_contactos(agenda):
         print("Contact list:")
         # Loop through the items in the phonebook and print each contact's name and phone number
         for nombre, telefono in agenda.items():
+              # For each tuple pair, print the contact's name and phone number. 
+              # 'nombre' is the variable representing the contact's name and 'telefono' is the variable representing the contact's phone number.
             print("Name:", nombre, "\tPhone number:", telefono)
 
 def buscar_contacto(agenda):
-    nombre = input("Ingresa el nombre del contacto que deseas buscar: ")
+    # Ask the user to input the name of the contact they want to search for
+    nombre = input("Enter the name of the contact you want to search for: ")
+    # Check if the contact is in the phonebook
     if nombre in agenda:
-        print("Nombre:", nombre, "\tTeléfono:", agenda[nombre])
+        # Print the contact's name and phone number
+        print("Name:", nombre, "\tPhone number:", agenda[nombre])
     else:
-        print("El contacto no se encuentra en la agenda.")
+        # Print a message saying the contact is not in the phonebook
+        print("The contact is not in the phonebook.")
