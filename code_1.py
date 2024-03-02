@@ -1,9 +1,12 @@
 def main():
+    # Displaying the welcome message
     print("Welcome to the phone book!!")
-    agenda = {}
 
-    while True:
-        print("1. Add contact")
+    agenda = {}# Creating an empty dictionary to store contacts
+
+    while True: # Infinite loop to show menu and receive options from user
+
+        print("1. Add contact") # Option to add a new contact
         print("2. View contacts")
         print("3. Search contact")
         print("4. Exit")
@@ -17,7 +20,7 @@ def main():
         elif opcion == "3":
             buscar_contacto(agenda)
         elif opcion == "4":
-            print("¡S!")
+            print("¡See you soon!")
             break
         else:
-            print("Opción no válida. Por favor, selecciona una opción válida.")
+            print("Invalid option. Please select a valid option.")
